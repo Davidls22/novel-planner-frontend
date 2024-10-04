@@ -16,7 +16,7 @@ export default function AllCharactersPage() {
   useEffect(() => {
     const fetchCharacters = async () => {
       const token = localStorage.getItem('token');
-      const response = await fetch('${API_BASE_URL}api/characters', {
+      const response = await fetch(`${API_BASE_URL}api/characters`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

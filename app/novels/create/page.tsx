@@ -14,7 +14,7 @@ export default function CreateNovelPage() {
     e.preventDefault();
     const token = localStorage.getItem('token');
 
-    const response = await fetch('${API_BASE_URL}api/novels', {
+    const response = await fetch(`${API_BASE_URL}api/novels`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

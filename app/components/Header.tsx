@@ -13,7 +13,7 @@ const Header = () => {
     // Fetch user data from the /api/user endpoint
     const token = localStorage.getItem('token');
     const fetchUserData = async () => {
-      const response = await fetch('${API_BASE_URL}api/user', {
+      const response = await fetch(`${API_BASE_URL}api/user`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

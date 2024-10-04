@@ -16,7 +16,7 @@ export default function AllWorldBuildingPage() {
   useEffect(() => {
     const fetchWorldElements = async () => {
       const token = localStorage.getItem('token');
-      const response = await fetch('${API_BASE_URL}api/world-elements', {
+      const response = await fetch(`${API_BASE_URL}api/world-elements`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -17,7 +17,7 @@ export default function NovelsPage() {
   useEffect(() => {
     const fetchNovels = async () => {
       const token = localStorage.getItem('token');
-      const response = await fetch('${API_BASE_URL}api/novels', {
+      const response = await fetch(`${API_BASE_URL}api/novels`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
